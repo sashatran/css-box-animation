@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #2f3238;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #cc6055;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper div {
+  width: 100px;
+  height: 100px;
+  background: #cc6055;
+  margin: 5px;
+}
+
+.box-1 {
+  transition: width 0.4s 0.1s, height .4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+.box-1.open {
+  width: 300px;
+  height: 200px;
+  transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.box-2 {
+  transition: width 1.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+.box-2.open {
+  width: 300px;
+  height: 200px;
+  transition: width 1.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.box-3 {
+  transition: width 1.4s 0.1s, height 1.7s 0.1s;
+}
+.box-3.open {
+  width: 300px;
+  height: 200px;
+  transition: width 1.4s 0.1s, height 1.7s 0.1s;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 12px;
+  }
+
+  .wrapper {
+    transform: scale(0.5);
+  }
+}
